@@ -1,0 +1,19 @@
+*{  
+    box-sizing: border-box;
+    margin: auto;
+ 
+    
+}
+h1{
+    margin-left: 42%;
+}
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    
+    }
+html {
+    background-color: rgba(0, 0, 0, 0.88);
+}
