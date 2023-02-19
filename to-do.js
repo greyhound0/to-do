@@ -1,8 +1,7 @@
-const btn = document.getElementById('btn');
-const list = document.getElementById('list');
+const enterBtn = document.getElementById('enterBtn');
 const inputField = document.getElementById('inputField');
 const orderedList = document.getElementById('orderedList');
-const clear = document.getElementById('clear');
+const clearBtn = document.getElementById('clearBtn');
 
 
 function addInputToList(){
@@ -16,19 +15,24 @@ orderedList.appendChild(listed);
 inputField.value = '';
 let a = document.createElement('a');
 a.href = "javascript:void(0)";
-a.textContent = "  X";
+a.innerText = " X" ;
 listed.appendChild(a);
 a.addEventListener('click', function(){
     orderedList.removeChild(listed);  
 })
-listed.addEventListener('click', function(){
-    let y = "yo";
-    orderedList.replaceChild( y , orderedList.childNodes[0]);
+
+listed.addEventListener('click', ()=> {
+   
+    let replacedItem =  prompt("enter the replaced item");
+    listed.innerText = replacedItem;
+    listed.appendChild(a)
+
 })
+
 }
 
 
-btn.addEventListener('click', addInputToList);
+enterBtn.addEventListener('click', addInputToList);
 
 window.addEventListener('keypress', (e) =>{
     if(e.charCode === 13){
@@ -36,7 +40,7 @@ window.addEventListener('keypress', (e) =>{
     }
 })
 
-clear.addEventListener('click',() =>{
+clearBtn.addEventListener('click',() =>{
     // orderedList.replaceChildren();
     orderedList.innerHTML = '';
 })
