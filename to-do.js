@@ -45,7 +45,7 @@ function itemRemoved(index){
 }
 
 function itemEdited(index){
-    itemsAdded.spliceWithEvent(input.value -1, 1, prompt('enter the item you want to add'))
+    itemsAdded.spliceWithEvent(index, 1, prompt('enter the item you want to add'))
 
 }
 
