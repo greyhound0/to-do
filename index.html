@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New To-do</title>
     <link rel="stylesheet" href="style.css">
-    <title>to-do list</title>
 </head>
 <body>
-     <h1>To-do List</h1>
-    <div class="input">
-        <input id="inputField" type="text" placeholder="what's on your mind today" size="30">
-        <button id="enterBtn">Enter</button>
-        <button id="clearBtn">Clear</button>
+    <h2>TO-DO LIST</h2>
+    <div id="buttons">
+        <input id="input" type="text" placeholder="enter the items you want to add to the list">
+        <button id="enter" onclick="newItemsAdded()">ENTER</button>
+        <button id="edit" onclick="itemEdited()">EDIT</button>
+        <button id="clear" onclick="itemRemoved()">CLEAR</button>
+        <ol id="itemsDisplayed">
+            <li>
+                
+            </li>
+            
+        </ol>
+
     </div>
-    <ol id="orderedList">
-        
-    </ol>
-    <script src="to-do.js"></script>
+
+
+
+    <script src="app.js"></script>
 </body>
 </html>
