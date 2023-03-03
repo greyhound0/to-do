@@ -32,6 +32,8 @@ editButton.addEventListener('click', ()=> {
     let replacedItem =  prompt("enter the replaced item");
     listed.innerText = replacedItem;
     listed.appendChild(a)
+    listed.appendChild(editButton);
+
 
 })
 
