@@ -67,7 +67,7 @@ html {
 
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:500px){
     #orderedList{
         margin-left: 10vh;
     }
