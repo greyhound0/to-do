@@ -66,3 +66,12 @@ html {
     margin-right: 5px;
 
 }
+
+@media screen and (max-width:750px){
+    #orderedList{
+        margin-left: 20vh;
+    }
+    h1{
+        margin-left: 30vh;
+    }
+}
